@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>registration form!</title>
+  <style>
+    body {
+      background-color: #7198e5;
+      padding: 40px;
+    }
+
+    form {
+      background: #66e4ae;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e40af;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #1e40af;
+      font-weight: 600;
+    }
+
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #a5b4fc;
+      border-radius: 5px;
+      background-color: #ffffff; 
+      color: #000; 
+    }
+
+    
+    ::placeholder {
+      color: white;
+      opacity: 1;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus {
+      border-color: #1d4ed8;
+      outline: none;
+      background-color: #ffffff;
+    }
+
+    .section-title {
+      margin-top: 20px;
+      font-weight: 600;
+      color: #1e40af;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      margin-right: 5px;
+      accent-color: #1d4ed8;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #1d4ed8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1e3a8a;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form action="#">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com">
+<label for="Date of birth"> DOB</label>
+<input type="month">
+    <p class="section-title">Favorite Language:</p>
+    <label><input type="radio" name="fav_language" value="HTML"> HTML</label>
+    <label><input type="radio" name="fav_language" value="CSS"> CSS</label>
+    <label><input type="radio" name="fav_language" value="C++"> C++</label>
+
+    <p class="section-title">Hobbies:</p>
+    <label><input type="checkbox" name="hobby" value="Reading"> Reading</label>
+    <label><input type="checkbox" name="hobby" value="Traveling"> Traveling</label>
+    <label><input type="checkbox" name="hobby" value="Driving"> Music</label>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
